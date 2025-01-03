@@ -1,12 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/Real-Estate-Website/',
-  build:{
-    outDir:'build'
-  }
-  
+  base: '/Real-Estate-Website/', // Set the base to match your repository name
+  build: {
+    outDir: 'build', // Ensure this matches your deployment script
+  },
 })
